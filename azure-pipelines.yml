@@ -31,10 +31,10 @@ steps:
     pip install boto3 awscli
   displayName: 'Install dependencies'
 
-- script: |
-    pip install pytest pytest-azurepipelines
-    pytest
-  displayName: 'pytest'
+# - script: |
+#     pip install pytest pytest-azurepipelines
+#     pytest
+#   displayName: 'pytest'
 
 - task: PythonScript@0
   displayName: 'Run a Python script'
