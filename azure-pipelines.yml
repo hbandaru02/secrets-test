@@ -39,4 +39,6 @@ steps:
 - task: PythonScript@0
   displayName: 'Run a Python script'
   inputs:
+    awsCredentials: 'dev-test'
+    regionName: 'us-east-1'
     scriptPath: 'get-db-secret.py'
